@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "coc-go": ">=0.8.0",
+    "coc-json": ">=1.2.6",
+    "coc-julia": ">=0.1.1",
+    "coc-sql": ">=0.2.24"
+  }
+}

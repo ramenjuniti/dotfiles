@@ -1,0 +1,28 @@
+{
+    "suggest.noselect":false,
+    "suggest.preferCompleteThanJumpPlaceholder":true,
+    "languageserver": {
+        "go": {
+            "command": "gopls",
+            "rootPatterns": ["go.mod"],
+            "trace.server": "verbose",
+            "filetypes": ["go"]
+        },
+        "sql": {
+            "command": "sql-language-server",
+            "args" : ["up", "--method", "stdio"],
+            "filetypes": ["sql", "mysql"]
+        },
+        "dockerfile": {
+            "command": "docker-langserver",
+            "filetypes": ["dockerfile"],
+            "args": ["--stdio"]
+        },
+        "julia": {
+            "command": "julia",
+            "args" : ["--startup-file=no", "--history-file=no", "-e",
+            "using LanguageServer;\n       using Pkg;\n       import StaticLint;\n       import SymbolServer;\n       env_path = dirname(Pkg.Types.Context().env.project_file);\n       debug = false;\n       server = LanguageServer.LanguageServerInstance(stdin, stdout, debug, env_path, \"\");\n       server.runlinter = true;\n       run(server);" ],
+            "filetypes": ["julia"]
+        }
+    }
+}
