@@ -28,9 +28,12 @@ repo = 'tpope/vim-markdown'
 on_ft = ['markdown']
 
 [[plugins]]
-repo = 'iamcco/markdown-preview.nvim'
-on_ft = ['markdown', 'pandoc.markdown', 'rwd']
-build = 'cd app & yarn install'
+repo = 'skanehira/preview-markdown.vim'
+hook_add = '''
+let g:preview_markdown_vertical = 1
+let g:preview_markdown_auto_update = 1
+'''
+on_ft = ['markdown']
 
 [[plugins]]
 repo = 'fatih/vim-go'
