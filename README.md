@@ -1,10 +1,12 @@
 # Dotfiles
 
-* fish
-* fisher
-* nvim
-* coc
-* karabiner
+* .tmux.conf
+* .config
+    * fish
+    * fisher
+    * nvim
+    * coc
+    * karabiner
 
 ## ローカルのファイルをコピー
 ```
