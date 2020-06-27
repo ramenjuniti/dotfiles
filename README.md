@@ -1,5 +1,7 @@
 # Dotfiles
 
+![macos](https://github.com/ramenjuniti/dotfiles/workflows/macos/badge.svg)
+
 * .tmux.conf
 * .config
     * fish
