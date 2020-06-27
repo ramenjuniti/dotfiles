@@ -1,16 +1,4 @@
-# Dotfiles
+# dotfiles
 
 ![macos](https://github.com/ramenjuniti/dotfiles/workflows/macos/badge.svg)
 
-* .tmux.conf
-* .config
-    * fish
-    * fisher
-    * nvim
-    * coc
-    * karabiner
-
-## ローカルのファイルをコピー
-```
-make cp
-```
