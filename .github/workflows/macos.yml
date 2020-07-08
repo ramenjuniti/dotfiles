@@ -13,9 +13,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            - name: Run brew bundle
-              run: make brew
+            # - name: Run brew bundle
+            #   run: make brew
 
             - name: Change shell
-              run: make chsh
+              run: sudo make chsh
 
