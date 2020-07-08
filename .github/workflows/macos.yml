@@ -13,14 +13,14 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            - name: Run brew bundle
+            - name: Run brew
               run: make brew
 
-            - name: Change shell
+            - name: Run chsh
               run: make chsh
 
             - name: Run fisher
-              run: make fisher
+              run: fisher
 
             - name: Run nodenv
               run: make nodenv

@@ -7,9 +7,6 @@ brew:
 chsh:
 	sudo chsh -s /usr/local/bin/fish
 
-fisher:
-	fisher
-
 nodenv:
 	nodenv install latest && nodenv rehash
 
