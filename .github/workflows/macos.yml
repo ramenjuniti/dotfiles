@@ -23,7 +23,7 @@ jobs:
               run: make chsh
 
             - name: Run fisher
-              run: fisher
+              run: make fisher
 
             - name: Run nodenv
               run: make nodenv
