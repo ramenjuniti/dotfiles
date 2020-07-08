@@ -21,6 +21,7 @@ jobs:
 
             - name: Run fisher
               run: fisher
+              shell: fish
 
             - name: Run nodenv
               run: make nodenv
