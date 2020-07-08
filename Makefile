@@ -15,13 +15,13 @@ fisher:
 	fish ./.config/fish/completions/fisher.fish
 
 nodenv:
-	nodenv install latest && nodenv rehash
+	./nodenv.sh
 
 rbenv:
-	rbenv install latest && rbenv rehash
+	./rbenv.sh
 
 pyenv:
-	pyenv install latest
+	./pyenv.sh
 
 nvim:
 	pip install neovim
