@@ -13,6 +13,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
+            - name: Run link
+              run: make link
+
             - name: Run brew
               run: make brew
 
@@ -21,7 +24,6 @@ jobs:
 
             - name: Run fisher
               run: fisher
-              shell: fish
 
             - name: Run nodenv
               run: make nodenv

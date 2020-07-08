@@ -1,5 +1,9 @@
 cp:
-	cp -rf ~/.config/fish ./.config/fish
+	cp -rf ~/.config/fish   ./.config/fish
+	cp -rf ~/.config/fisher ./.config/fisher
+
+link:
+	ln -sf ./.config ~/.config
 
 brew:
 	brew bundle	
@@ -8,7 +12,7 @@ chsh:
 	sudo chsh -s /usr/local/bin/fish
 
 fisher:
-	fisher .config/fish/fishfile
+	fish ./.config/fish/completions/fisher.fish
 
 nodenv:
 	nodenv install latest && nodenv rehash
