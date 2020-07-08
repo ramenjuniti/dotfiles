@@ -10,5 +10,14 @@ chsh:
 fisher:
 	fisher
 
+nodenv:
+	nodenv install latest && nodenv rehash
+
+rbenv:
+	rbenv install latest && rbenv rehash
+
+pyenv:
+	pyenv install latest
+
 nvim:
 	pip install neovim

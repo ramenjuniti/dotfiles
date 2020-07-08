@@ -19,3 +19,14 @@ jobs:
             - name: Change shell
               run: make chsh
 
+            - name: Run fisher
+              run: make fisher
+
+            - name: Run nodenv
+              run: make nodenv
+
+            - name: Run rbenv
+              run: make rbenv
+
+            - name: Run pyenv
+              run: make pyenv
