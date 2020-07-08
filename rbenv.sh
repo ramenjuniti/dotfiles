@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if has "rbenv"; then
+if type rbenv >/dev/null 2>&1; then
   latest=`rbenv install --list | grep -v - | tail -n 1`
   current=`rbenv versions | tail -n 1 | cut -d' ' -f 2`
   if [ ${current} != ${latest} ]; then
