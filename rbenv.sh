@@ -5,6 +5,7 @@ if has "rbenv"; then
   current=`rbenv versions | tail -n 1 | cut -d' ' -f 2`
   if [ ${current} != ${latest} ]; then
     rbenv install ${latest}
+    rbenv rehash
     rbenv global ${latest}
   fi
 fi
