@@ -5,7 +5,7 @@ brew:
 	brew bundle	
 
 chsh:
-	chsh -s /usr/local/bin/fish
+	sudo chsh -s /usr/local/bin/fish
 
 fisher:
 	fisher
