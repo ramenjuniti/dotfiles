@@ -12,7 +12,7 @@ chsh:
 	sudo chsh -s /usr/local/bin/fish
 
 fisher:
-	/usr/local/bin/fish ./.config/fish/functions/fisher.fish
+	fish && fisher.fish
 
 nodenv:
 	./nodenv.sh
