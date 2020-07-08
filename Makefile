@@ -1,2 +1,2 @@
 cp:
-	cp ~/.config/fish .
+	cp -rf ~/.config/fish ./.config/fish
