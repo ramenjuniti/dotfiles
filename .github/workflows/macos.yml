@@ -14,8 +14,8 @@ jobs:
             - uses: actions/checkout@v2
 
             - name: Run brew bundle
-              run: brew bundle
+              run: make brew
 
-            - name: Run fisher
-              run: fisher
+            - name: Change shell
+              run: make chsh
 
