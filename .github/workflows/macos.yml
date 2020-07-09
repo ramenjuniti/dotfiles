@@ -19,6 +19,9 @@ jobs:
             - name: Run brew
               run: make brew
 
+            - name: Run fish
+              run: fish
+
             - name: Run chsh
               run: make chsh
 
