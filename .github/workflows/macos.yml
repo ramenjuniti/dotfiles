@@ -26,7 +26,7 @@ jobs:
               run: make link
 
             - name: Run fisher
-              run: make fisher
+              run: fisher
 
             - name: Run nodenv
               run: make nodenv
