@@ -3,7 +3,7 @@ cp:
 	cp -rf ~/.config/fisher ./.config/fisher
 
 link:
-	ln -sf ./.config/fish ~/.config/fish
+	ln -sf ./.config/fish $HOME/.config/fish
 
 brew:
 	brew bundle	
