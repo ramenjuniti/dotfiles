@@ -13,17 +13,17 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            - name: Run link
-              run: make link
-
             - name: Run brew
               run: make brew
+
+            - name: Run chsh
+              run: make chsh
 
             - name: Run fish
               run: fish
 
-            - name: Run chsh
-              run: make chsh
+            - name: Run link
+              run: make link
 
             - name: Run fisher
               run: make fisher
