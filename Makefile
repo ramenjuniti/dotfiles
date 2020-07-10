@@ -9,7 +9,7 @@ brew:
 	brew bundle	
 
 chsh:
-	sudo chsh -s /usr/local/bin/fish
+	echo /usr/local/bin/fish | sudo tee -a /etc/shells && sudo chsh -s /usr/local/bin/fish
 
 fisher:
 	fish -c fisher
