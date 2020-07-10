@@ -16,6 +16,9 @@ jobs:
             - name: Run link
               run: make link
 
+            - name: Check link
+              run: ls -l $HOME/.config
+
             - name: Run brew
               run: make brew
 
