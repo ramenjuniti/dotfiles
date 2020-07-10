@@ -12,7 +12,7 @@ chsh:
 	echo /usr/local/bin/fish | sudo tee -a /etc/shells && sudo chsh -s /usr/local/bin/fish
 
 fisher:
-	curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish && fisher
+	fish -c fisher
 
 nodenv:
 	./nodenv.sh
