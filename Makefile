@@ -1,9 +1,10 @@
 cp:
-	cp -rf ~/.config/fish   ./.config/fish
-	cp -rf ~/.config/fisher ./.config/fisher
+	cp -rf ~/.config/fish   ./.config
+	cp -rf ~/.config/fisher ./.config
 
 link:
-	ln -sf ./.config/fish ${HOME}/.config/fish
+	ln -sf ./.config/fish   ${HOME}/.config/fish
+	ln -sf ./.config/fisher ${HOME}/.config/fisher
 
 brew:
 	brew bundle	
@@ -11,17 +12,14 @@ brew:
 chsh:
 	echo /usr/local/bin/fish | sudo tee -a /etc/shells && sudo chsh -s /usr/local/bin/fish
 
-fisher:
-	fish -c fisher
-
 nodenv:
-	./nodenv.sh
+	./scripts/nodenv.sh
 
 rbenv:
-	./rbenv.sh
+	./scripts/rbenv.sh
 
 pyenv:
-	./pyenv.sh
+	./scripts/pyenv.sh
 
 nvim:
 	pip install neovim

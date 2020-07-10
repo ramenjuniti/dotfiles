@@ -13,23 +13,14 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
+            - name: Run link
+              run: make link
+
             - name: Run brew
               run: make brew
 
             - name: Run chsh
               run: make chsh
-
-            - name: Run fish
-              run: fish
-          
-            - name: Install fisher
-              run: curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-
-            - name: Run link
-              run: make link
-
-            - name: Run fisher
-              run: fisher
 
             - name: Run nodenv
               run: make nodenv
