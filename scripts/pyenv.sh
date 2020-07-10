@@ -8,3 +8,5 @@ if type pyenv >/dev/null 2>&1; then
     pyenv global ${latest}
   fi
 fi
+
+python --version

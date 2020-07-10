@@ -9,3 +9,5 @@ if type nodenv >/dev/null 2>&1; then
     nodenv global ${latest}
   fi
 fi
+
+node -v

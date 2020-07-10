@@ -9,3 +9,5 @@ if type rbenv >/dev/null 2>&1; then
     rbenv global ${latest}
   fi
 fi
+
+ruby -v
