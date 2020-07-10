@@ -17,7 +17,7 @@ jobs:
               run: make link
 
             - name: Check link
-              run: ls -l $HOME/.config
+              run: ls -la $HOME/.config | grep -- "->"
 
             - name: Run brew
               run: make brew
