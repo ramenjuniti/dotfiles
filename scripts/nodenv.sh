@@ -11,3 +11,4 @@ if type nodenv >/dev/null 2>&1; then
 fi
 
 node -v
+which node

@@ -11,3 +11,4 @@ if type rbenv >/dev/null 2>&1; then
 fi
 
 ruby -v
+which ruby

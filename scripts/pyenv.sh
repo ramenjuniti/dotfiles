@@ -10,3 +10,4 @@ if type pyenv >/dev/null 2>&1; then
 fi
 
 python --version
+which python
