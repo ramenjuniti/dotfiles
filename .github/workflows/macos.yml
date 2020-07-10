@@ -25,6 +25,9 @@ jobs:
             - name: Run chsh
               run: make chsh
 
+            - name: Run fish
+              run: fish
+
             - name: Run nodenv
               run: make nodenv
 
