@@ -21,6 +21,9 @@ jobs:
 
             - name: Run fish
               run: fish
+          
+            - name: Install fisher
+              run: curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
             - name: Run link
               run: make link
