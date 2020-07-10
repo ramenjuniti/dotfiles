@@ -12,7 +12,8 @@ brew:
 	brew bundle	
 
 chsh:
-	echo /usr/local/bin/fish | sudo tee -a /etc/shells && sudo chsh -s /usr/local/bin/fish
+	echo /usr/local/bin/fish | sudo tee -a /etc/shells && \
+	sudo chsh -s /usr/local/bin/fish
 
 nodenv:
 	./scripts/nodenv.sh
