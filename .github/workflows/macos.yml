@@ -22,6 +22,9 @@ jobs:
             - name: Run brew
               run: brew install fish nodenv rbenv pyenv
 
+            - name: Run fish
+              run: fish
+
             - name: Run chsh
               run: make chsh
 
@@ -33,7 +36,7 @@ jobs:
 
             - name: Run pyenv
               run: make pyenv
-              
-            - name: Run fish
-              run: fish && source ./.config/fish/config.fish
-
+         
+            - name: Run resource
+              run: resource ./.config/fish/config.fish
+            
