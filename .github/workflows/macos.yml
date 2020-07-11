@@ -33,4 +33,4 @@ jobs:
               run: ls -la $HOME/.config | grep -- "->"
 
             - name: Run login shell
-              run: make link && fish -l
+              run: fish -l && echo $HOME
