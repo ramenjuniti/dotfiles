@@ -13,13 +13,13 @@ jobs:
               run: make link
 
             - name: Run brew
-              run: brew install fish pyenv neovim
+              run: make brew
 
-            # - name: Run nodenv
-            #   run: make nodenv
+            - name: Run nodenv
+              run: make nodenv
 
-            # - name: Run rbenv
-            #   run: make rbenv
+            - name: Run rbenv
+              run: make rbenv
 
             - name: Run pyenv
               run: make pyenv

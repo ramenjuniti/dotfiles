@@ -2,12 +2,14 @@ cp:
 	cp -rf ~/.config/fish      ./.config
 	cp -rf ~/.config/fisher    ./.config
 	cp -rf ~/.config/nvim      ./.config
+	cp -rf ~/.config/coc       ./.config
 	cp -rf ~/.config/karabiner ./.config
 
 link:
 	ln -sf ./.config/fish      ${HOME}/.config/fish
 	ln -sf ./.config/fisher    ${HOME}/.config/fisher
 	ln -sf ./.config/nvim      ${HOME}/.config/nvim 
+	ln -sf ./.config/coc       ${HOME}/.config/coc
 	ln -sf ./.config/karabiner ${HOME}/.config/karabiner
 
 chsh:
