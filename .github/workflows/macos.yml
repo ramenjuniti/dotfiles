@@ -16,9 +16,6 @@ jobs:
             - name: Run link
               run: make link
 
-            - name: Check link
-              run: ls -la $HOME/.config | grep -- "->"
-
             - name: Run brew
               run: brew install fish nodenv rbenv pyenv
 
@@ -28,6 +25,9 @@ jobs:
             - name: Run chsh
               run: make chsh
 
+            - name: Check link
+              run: ls -la $HOME/.config | grep -- "->"
+
             - name: Run nodenv
               run: make nodenv
 
@@ -36,7 +36,6 @@ jobs:
 
             - name: Run pyenv
               run: make pyenv
-         
+ 
             - name: Run resource
               run: resource ./.config/fish/config.fish
-            
