@@ -14,14 +14,14 @@ jobs:
             - name: Run brew
               run: brew install fish nodenv rbenv pyenv
 
-            - name: Run nodenv
-              run: make nodenv
+            # - name: Run nodenv
+            #   run: make nodenv
 
-            - name: Run rbenv
-              run: make rbenv
+            # - name: Run rbenv
+            #   run: make rbenv
 
-            - name: Run pyenv
-              run: make pyenv
+            # - name: Run pyenv
+            #   run: make pyenv
 
             - name: Run chsh
               run: make chsh
@@ -33,4 +33,4 @@ jobs:
               run: ls -la $HOME/.config | grep -- "->"
 
             - name: Run login shell
-              run: fish -l
+              run: make link && fish -l
