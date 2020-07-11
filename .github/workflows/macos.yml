@@ -20,13 +20,13 @@ jobs:
               run: ls -la $HOME/.config | grep -- "->"
 
             - name: Run brew
-              run: make brew
+              run: brew install fish nodenv rbenv pyenv
 
             - name: Run chsh
               run: make chsh
 
             - name: Run fish
-              run: fish
+              run: fish && source $HOME/.config/fish/config.fish
 
             - name: Run nodenv
               run: make nodenv
