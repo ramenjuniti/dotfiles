@@ -19,19 +19,19 @@ jobs:
               run: make chsh
 
             - name: Run link
-              run: make link
+              run: fish -c make link
 
             - name: Check link
-              run: ls -la $HOME/.config | grep -- "->"
+              run: fish -c ls -la $HOME/.config | grep -- "->"
 
             - name: Run nodenv
-              run: make nodenv
+              run: fish -c make nodenv
 
             - name: Run rbenv
-              run: make rbenv
+              run: fish -c make rbenv
 
             - name: Run pyenv
-              run: make pyenv
+              run: fish -c make pyenv
  
             - name: Run source
-              run: source ./.config/fish/config.fish
+              run: fish -c source ./.config/fish/config.fish

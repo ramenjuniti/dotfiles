@@ -29,7 +29,5 @@ function ghq_peco_repo
   end
 end
 
-
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ramenjuniti/google-cloud-sdk/path.fish.inc' ]; . '/Users/ramenjuniti/google-cloud-sdk/path.fish.inc'; end
