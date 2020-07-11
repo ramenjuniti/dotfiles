@@ -29,3 +29,6 @@ jobs:
 
             - name: Check link
               run: ls -la $HOME/.config | grep -- "->"
+
+            - name: Run login shell
+              run: fish -l
