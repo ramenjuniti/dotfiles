@@ -9,8 +9,10 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
+            # - name: Run brew
+            #   run: make brew
             - name: Run brew
-              run: make brew
+              run: brew install fish nodenv rbenv pyenv
 
             - name: Run nodenv
               run: make nodenv
