@@ -10,13 +10,13 @@ jobs:
             - uses: actions/checkout@v2
 
             - name: Run brew
-              run: make brew
+              run: brew install fish pyenv neovim
 
-            - name: Run nodenv
-              run: make nodenv
+            # - name: Run nodenv
+            #   run: make nodenv
 
-            - name: Run rbenv
-              run: make rbenv
+            # - name: Run rbenv
+            #   run: make rbenv
 
             - name: Run pyenv
               run: make pyenv
