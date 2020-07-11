@@ -25,9 +25,6 @@ jobs:
             - name: Run chsh
               run: make chsh
 
-            - name: Run fish
-              run: fish && source ./.config/fish/config.fish
-
             - name: Run nodenv
               run: make nodenv
 
@@ -36,3 +33,7 @@ jobs:
 
             - name: Run pyenv
               run: make pyenv
+              
+            - name: Run fish
+              run: fish && source ./.config/fish/config.fish
+
