@@ -1,10 +1,6 @@
 name: macos
 
-on:
-    push:
-        branches: [ master ]
-    pull_request:
-        branches: [ master ]
+on: [push]
 
 jobs:
     macos-test:
@@ -37,5 +33,5 @@ jobs:
             - name: Run pyenv
               run: make pyenv
  
-            - name: Run resource
-              run: resource ./.config/fish/config.fish
+            - name: Run source
+              run: source ./.config/fish/config.fish
