@@ -27,6 +27,10 @@ jobs:
             - name: Run nvim
               run: make nvim
 
+            - name: Run coc
+              run: npm install
+              working-directory: ./.config/coc/extensions
+
             - name: Run chsh
               run: make chsh
  
