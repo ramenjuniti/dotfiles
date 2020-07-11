@@ -1,0 +1,87 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = "neoclide/coc.nvim"
+if = '''executable('node') && executable('yarn')'''
+rev = "release"
+merge = 0
+hook_add = """
+source ~/.config/nvim/plugins/coc.rc.vim
+"""
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'dracula/vim'
+hook_add='''
+colorscheme dracula
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+hook_add ='''
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add ='''
+let g:airline_theme = 'dracula'
+'''
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = '''
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+\    'guifgs': ['lightskyblue1', 'lightyellow', 'lightcyan', 'lightmagenta']
+\}
+'''
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+hook_add = '''
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+'''
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+hook_add = '''
+let g:winresizer_vert_resize = 1
+let g:winresizer_horiz_resize = 1
+'''
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+# dein_lazyだと怒られるので
+[[plugins]]
+repo = 'JuliaLang/julia-vim'
+on_ft = ['julia']
+hook_add = '''
+let g:latex_to_unicode_tab = 0
+let g:latex_to_unicode_eager = 0
+let g:latex_to_unicode_suggestions = 0
+let g:latex_to_unicode_file_types_blacklist = ".*"
+'''

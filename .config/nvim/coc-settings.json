@@ -1,0 +1,34 @@
+{
+	"suggest.noselect": false,
+	"suggest.preferCompleteThanJumpPlaceholder": true,
+	"languageserver": {
+		"go": {
+			"command": "gopls",
+			"rootPatterns": [
+				"go.mod"
+			],
+			"trace.server": "verbose",
+			"filetypes": [
+				"go"
+			]
+		}
+	},
+	"eslint.autoFixOnSave": true,
+	"eslint.filetypes": [
+		"vue",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"coc.preferences.formatOnType": true,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"vue",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"tsserver.formatOnType": true,
+	"prettier.disableSuccessMessage": true
+}

@@ -9,19 +9,20 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            # - name: Run brew
-            #   run: make brew
             - name: Run brew
-              run: brew install fish nodenv rbenv pyenv
+              run: make brew
 
-            # - name: Run nodenv
-            #   run: make nodenv
+            - name: Run nodenv
+              run: make nodenv
 
-            # - name: Run rbenv
-            #   run: make rbenv
+            - name: Run rbenv
+              run: make rbenv
 
-            # - name: Run pyenv
-            #   run: make pyenv
+            - name: Run pyenv
+              run: make pyenv
+
+            - name: Run nvim
+              run: make nvim
 
             - name: Run chsh
               run: make chsh
@@ -31,6 +32,3 @@ jobs:
 
             - name: Check link
               run: ls -la $HOME/.config | grep -- "->"
-
-            - name: Run login shell
-              run: fish -l && echo $HOME

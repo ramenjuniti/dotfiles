@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 if type pyenv >/dev/null 2>&1; then
   latest=`pyenv install --list | grep -v - | tail -n 1`
   current=`pyenv versions | tail -n 1 | cut -d' ' -f 2`
@@ -8,6 +10,3 @@ if type pyenv >/dev/null 2>&1; then
     pyenv global ${latest}
   fi
 fi
-
-python --version
-which python
