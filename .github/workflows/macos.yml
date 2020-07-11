@@ -9,6 +9,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
+            - name: Run link
+              run: make link
+
             - name: Run brew
               run: brew install fish pyenv neovim
 
@@ -27,8 +30,5 @@ jobs:
             - name: Run chsh
               run: make chsh
  
-            - name: Run link
-              run: make link
-
             - name: Check link
               run: ls -la $HOME/.config | grep -- "->"
