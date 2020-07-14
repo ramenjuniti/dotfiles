@@ -29,3 +29,6 @@ pyenv:
 
 nvim:
 	./scripts/nvim.sh
+
+fish:
+	./scripts/fish.sh

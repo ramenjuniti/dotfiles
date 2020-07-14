@@ -12,6 +12,9 @@ jobs:
             - name: Run link
               run: make link
 
+            - name: Check link
+              run: ls -la $HOME/.config | grep -- "->"
+
             - name: Run brew
               run: make brew
 
@@ -27,12 +30,8 @@ jobs:
             - name: Run nvim
               run: make nvim
 
-            - name: Run coc
-              run: npm install
-              working-directory: ./.config/coc/extensions
+            - name: Run fish
+              run: make fish
 
             - name: Run chsh
               run: make chsh
- 
-            - name: Check link
-              run: ls -la $HOME/.config | grep -- "->"
