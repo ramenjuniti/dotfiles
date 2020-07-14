@@ -34,6 +34,7 @@ brew "tree"
 brew "wget"
 brew "heroku/brew/heroku"
 brew "skanehira/docui/docui"
+brew "lazygit"
 
 cask "font-droidsansmono-nerd-font"
 cask "julia"
