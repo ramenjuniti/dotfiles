@@ -42,8 +42,8 @@ jobs:
             - name: Restart shell
               run: exec $SHELL -l
 
-            - name: Run fish
-              run: make fish
+            - name: Run fisher
+              run: fisher
 
             - name: Run chsh
               run: make chsh
