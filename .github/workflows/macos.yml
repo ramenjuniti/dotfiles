@@ -21,6 +21,15 @@ jobs:
             - name: Run nodenv
               run: make nodenv
 
+            - name: Cache rbenv
+              uses: actions/cache@v2
+              id: cache_rbenv
+              with:
+                  path: /home/runner/.rbenv
+                  key: ${{ runner.os }}-rbenv-${{ hashFiles('**/.ruby-version') }}
+                  restore-keys: |
+                      {{ runner.os }}-rbenv-
+
             - name: Run rbenv
               run: make rbenv
 
@@ -29,7 +38,7 @@ jobs:
 
             - name: Run nvim
               run: make nvim
- 
+
             - name: Restart shell
               run: exec $SHELL -l
 
