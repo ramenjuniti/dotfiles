@@ -29,6 +29,9 @@ jobs:
 
             - name: Run nvim
               run: make nvim
+ 
+            - name: Restart shell
+              run: exec $SHELL -l
 
             - name: Run fish
               run: make fish
