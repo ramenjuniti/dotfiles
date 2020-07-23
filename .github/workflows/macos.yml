@@ -12,9 +12,6 @@ jobs:
             - name: Run link
               run: make link
 
-            - name: Check link
-              run: ls -la $HOME/.config | grep -- "->"
-
             - name: Run brew
               run: make brew
 
@@ -35,3 +32,15 @@ jobs:
 
             - name: Run chsh
               run: make chsh
+          
+            - name: Check link
+              run: ls -la $HOME/.config | grep -- "->"
+          
+            - name: Check node
+              run: node -v
+          
+            - name: Check ruby
+              run: ruby -v
+  
+            - name: Check python
+              run: python --version
