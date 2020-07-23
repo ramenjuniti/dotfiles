@@ -23,6 +23,8 @@ set encoding=utf-8
 
 set background=dark
 
+set timeout timeoutlen=1000 ttimeoutlen=50
+
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体

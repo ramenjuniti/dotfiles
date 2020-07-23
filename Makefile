@@ -3,12 +3,14 @@ cp:
 	cp -rf ~/.config/nvim      ./.config
 	cp -rf ~/.config/coc       ./.config
 	cp -rf ~/.config/karabiner ./.config
+	cp -rf ~/.gitconfig        ./.gitconfig
 
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config/fish
 	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config/nvim 
 	ln -sf ${CURDIR}/.config/coc       ${HOME}/.config/coc
 	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config/karabiner
+	ln -sf ${CURDIR}/,gitconfig        ${HOME}/.gitconfig
 
 chsh:
 	echo /usr/local/bin/fish | sudo tee -a /etc/shells && sudo chsh -s /usr/local/bin/fish
