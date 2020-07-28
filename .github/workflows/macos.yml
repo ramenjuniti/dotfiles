@@ -27,6 +27,9 @@ jobs:
             - name: Run nvim
               run: make nvim
 
+            - name: Run coc
+              run: make coc
+
             - name: Run fish
               run: make fish
 

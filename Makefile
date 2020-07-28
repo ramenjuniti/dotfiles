@@ -48,6 +48,9 @@ pyenv:
 nvim:
 	./scripts/nvim.sh
 
+coc:
+	nvim -c 'CocInstall -sync coc-json coc-html|q'	
+
 fish:
 	./scripts/fish.sh
 
