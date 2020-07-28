@@ -9,5 +9,5 @@ if type nvim >/dev/null 2>&1; then
     sh ./installer.sh ~/.cache/dein
     rm ./installer.sh
 
-    nvim -c q
+    nvim -c "CheckHelth | q"
 fi
