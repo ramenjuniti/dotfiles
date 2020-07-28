@@ -1,28 +1,32 @@
 cp:
-	cp -rf ~/.config/fish/config.fish ./.config/fish/config.fish
-	cp -rf ~/.config/fish/fishfile    ./.config/fish/fishfile
-	cp -rf ~/.config/nvim             ./.config
-	cp -rf ~/.config/coc              ./.config
-	cp -rf ~/.config/karabiner        ./.config
-	cp -rf ~/.config/iterm2           ./.config
-	cp -rf ~/.gitconfig               ./.gitconfig
+	cp -rf ~/.config/fish/config.fish                   ./.config/fish/config.fish
+	cp -rf ~/.config/fish/fishfile                      ./.config/fish/fishfile
+	cp -rf ~/.config/iterm2/com.googlecode.iterm2.plist ./.config/iterm2/com.googlecode.iterm2.plist
+	cp -rf ~/.config/nvim                               ./.config
+	cp -rf ~/.config/karabiner                          ./.config
+	cp -rf ~/.gitconfig                                 ./.gitconfig
 
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config/fish
 	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config/nvim 
-	ln -sf ${CURDIR}/.config/coc       ${HOME}/.config/coc
 	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config/karabiner
 	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config/iterm2
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
 
 chsh:
-	echo /usr/local/bin/fish | sudo tee -a /etc/shells && sudo chsh -s /usr/local/bin/fish
+	echo /usr/local/bin/fish | sudo tee -a /etc/shells && \
+	sudo chsh -s /usr/local/bin/fish
 
 brew:
-	brew update && brew upgrade && brew bundle
+	brew update && \
+	brew upgrade && \
+	brew bundle
 
 required-brew:
-	brew update && brew upgrade && brew install fish nvim nodenv rbenv pyenv
+	brew update && \
+	brew upgrade && \
+	brew install fish nvim nodenv rbenv pyenv && \
+	brew cask install iterm2
 
 nodenv:
 	./scripts/nodenv.sh
@@ -38,3 +42,7 @@ nvim:
 
 fish:
 	./scripts/fish.sh
+
+reload:
+	killall cfprefsd
+

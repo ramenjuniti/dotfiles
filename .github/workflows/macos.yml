@@ -33,6 +33,9 @@ jobs:
             - name: Run chsh
               run: make chsh
 
+            - name: Run reload
+              run: make reload
+
             - name: Check link
               run: ls -la $HOME/.config | grep -- "->"
 
