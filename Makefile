@@ -1,8 +1,16 @@
+mkdir:
+	mkdir -p ./config/fish
+	mkdir -p ./config/nvim
+	mkdir -p ./config/coc/extensions
+	mkdir -p ./config/karabiner
+	mkdir -p ./config/iterm2
+
 cp:
 	cp -rf ~/.config/fish/config.fish                   ./.config/fish/config.fish
 	cp -rf ~/.config/fish/fishfile                      ./.config/fish/fishfile
 	cp -rf ~/.config/iterm2/com.googlecode.iterm2.plist ./.config/iterm2/com.googlecode.iterm2.plist
 	cp -rf ~/.config/nvim                               ./.config
+	cp -rf ~/.config/coc/extensions/package.json        ./.config/coc/extensions/
 	cp -rf ~/.config/karabiner                          ./.config
 	cp -rf ~/.gitconfig                                 ./.gitconfig
 
