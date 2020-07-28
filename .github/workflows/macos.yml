@@ -3,7 +3,7 @@ name: macos
 on: [push]
 
 jobs:
-    macos-required-test:
+    required:
         runs-on: macos-latest
 
         steps:
@@ -54,7 +54,7 @@ jobs:
             - name: Check python
               run: fish -c "python --version"
 
-    macos-all-test:
+    all:
         runs-on: macos-latest
 
         steps:
