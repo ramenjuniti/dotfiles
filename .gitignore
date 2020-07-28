@@ -3,4 +3,4 @@
 node_modules
 coc-go-data
 
-*.backup
+config.fish.backup

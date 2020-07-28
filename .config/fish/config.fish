@@ -1,7 +1,8 @@
 # env
+# go
 set -x GOPATH     $HOME/go
 set -x PATH       $PATH $GOPATH/bin
-
+# pyenv
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH       $PATH $PYENV_ROOT/bin
 
