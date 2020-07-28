@@ -7,6 +7,7 @@ mkdir:
 cp:
 	cp -rf ~/.config/fish/config.fish                   ./.config/fish/config.fish
 	cp -rf ~/.config/fish/fishfile                      ./.config/fish/fishfile
+	cp -rf ~/.config/fish/fish_color                    ./.config/fish/fish_color
 	cp -rf ~/.config/iterm2/com.googlecode.iterm2.plist ./.config/iterm2/com.googlecode.iterm2.plist
 	cp -rf ~/.config/nvim                               ./.config
 	cp -rf ~/.config/karabiner                          ./.config
