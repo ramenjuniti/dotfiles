@@ -36,6 +36,12 @@ jobs:
             - name: Check link
               run: ls -la $HOME/.config | grep -- "->"
 
+            - name: Check fish
+              run: ls ./.config/fish
+
+            - name: Check fish variable
+              run: cat ./.config/fish/fish_variables
+
             - name: Check node
               run: fish -c "node -v"
 
