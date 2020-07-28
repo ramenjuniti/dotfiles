@@ -2,44 +2,18 @@
 
 ![macos](https://github.com/ramenjuniti/dotfiles/workflows/macos/badge.svg)
 
-## homebrew
+## Setup
 
-```
-make brew
-```
+1. install Xcode
+`App Store`から`Xcode`をインストール
 
-## link
+1. install Command Line Developer Tools
+	```sh
+	xcode-select --install
+	```
 
-```
-make link
-```
+1. install all
+	```sh
+	make all
+	```
 
-## nodenv
-
-```
-make nodenv
-```
-
-## rbenv
-
-```
-make rbenv
-```
-
-## pyenv
-
-```
-make pyenv
-```
-
-## fish
-
-```
-make fish
-```
-
-## nvim
-
-```
-make nvim
-```

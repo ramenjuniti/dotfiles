@@ -25,10 +25,10 @@ jobs:
               run: make pyenv
 
             - name: Run source
-              run: source ~/.bashrc
+              run: source ~/.bashrc && source ~/.bash_profile
 
             - name: Run nvim
-              run: make nvim
+              run: source ~/.bashrc && source ~/.bash_profile && make nvim
 
             - name: Run fish
               run: make fish
@@ -57,6 +57,6 @@ jobs:
             - name: Check python
               run: fish -c "python --version"
 
-            - name: Run brew
-              run: make brew
+            - name: Run all
+              run: make all
 

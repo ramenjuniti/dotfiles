@@ -12,16 +12,14 @@ cp:
 	cp -rf ~/.config/karabiner                          ./.config
 	cp -rf ~/.gitconfig                                 ./.gitconfig
 
+all: link brew nodenv rbenv pyenv nvim fish chsh reload
+
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config/fish
 	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config/nvim 
 	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config/karabiner
 	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config/iterm2
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
-
-chsh:
-	echo /usr/local/bin/fish | sudo tee -a /etc/shells && \
-	sudo chsh -s /usr/local/bin/fish
 
 brew:
 	brew update && \
@@ -48,6 +46,10 @@ nvim:
 
 fish:
 	./scripts/fish.sh
+
+chsh:
+	echo /usr/local/bin/fish | sudo tee -a /etc/shells && \
+	sudo chsh -s /usr/local/bin/fish
 
 reload:
 	killall cfprefsd
