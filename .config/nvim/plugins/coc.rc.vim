@@ -41,3 +41,17 @@ nmap <leader>rn <Plug>(coc-rename)
 " if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
 "   let g:coc_global_extensions += ['coc-eslint']
 " endif
+
+let g:coc_global_extensions = [
+  \  'coc-css'
+  \, 'coc-docker'
+  \, 'coc-eslint'
+  \, 'coc-go'
+  \, 'coc-html'
+  \, 'coc-json'
+  \, 'coc-julia'
+  \, 'coc-prettier'
+  \, 'coc-sql'
+  \, 'coc-tsserver'
+  \, 'coc-vetur'
+  \ ]
