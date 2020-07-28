@@ -4,6 +4,7 @@ cp:
 	cp -rf ~/.config/nvim             ./.config
 	cp -rf ~/.config/coc              ./.config
 	cp -rf ~/.config/karabiner        ./.config
+	cp -rf ~/.config/iterm2           ./.config
 	cp -rf ~/.gitconfig               ./.gitconfig
 
 link:
@@ -11,6 +12,7 @@ link:
 	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config/nvim 
 	ln -sf ${CURDIR}/.config/coc       ${HOME}/.config/coc
 	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config/karabiner
+	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config/iterm2
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
 
 chsh:
