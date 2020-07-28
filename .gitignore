@@ -1,4 +1,6 @@
 .DS_Store
 
-node_modules
-coc-go-data
+.config/fish/fish_variables
+.config/fish/conf.d
+.config/fish/completions
+.config/fish/functions
