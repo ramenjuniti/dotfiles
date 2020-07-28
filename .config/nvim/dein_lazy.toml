@@ -43,4 +43,11 @@ let g:go_doc_keywordprg_enabled = 0
 
 [[plugins]]
 repo = 'SirVer/ultisnips'
+hook_add = '''
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+'''
 
+[[plugins]]
+repo = 'honza/vim-snippets'

@@ -2,9 +2,3 @@
 
 node_modules
 coc-go-data
-
-fish/completions
-fish/conf.d
-fish/functions
-fish/fish_variables
-fish/config.fish.backup

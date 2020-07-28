@@ -1,9 +1,10 @@
 cp:
-	cp -rf ~/.config/fish      ./.config
-	cp -rf ~/.config/nvim      ./.config
-	cp -rf ~/.config/coc       ./.config
-	cp -rf ~/.config/karabiner ./.config
-	cp -rf ~/.gitconfig        ./.gitconfig
+	cp -rf ~/.config/fish/config.fish ./.config/fish/config.fish
+	cp -rf ~/.config/fish/fishfile    ./.config/fish/fishfile
+	cp -rf ~/.config/nvim             ./.config
+	cp -rf ~/.config/coc              ./.config
+	cp -rf ~/.config/karabiner        ./.config
+	cp -rf ~/.gitconfig               ./.gitconfig
 
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config/fish
