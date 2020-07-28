@@ -30,7 +30,7 @@ required-brew:
 	brew update && \
 	brew upgrade && \
 	brew install fish nvim nodenv rbenv pyenv && \
-	brew cask install iterm2 karabiner
+	brew cask install iterm2 karabiner-elements
 
 nodenv:
 	./scripts/nodenv.sh
