@@ -12,8 +12,8 @@ jobs:
             - name: Run link
               run: make link
 
-            - name: Run brew
-              run: make brew
+            - name: Run required brew
+              run: make required-brew
 
             - name: Run nodenv
               run: make nodenv
@@ -44,3 +44,7 @@ jobs:
 
             - name: Check python
               run: fish -c "python --version"
+
+            - name: Run brew
+              run: make brew
+

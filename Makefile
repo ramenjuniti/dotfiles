@@ -19,6 +19,9 @@ chsh:
 brew:
 	brew update && brew upgrade && brew bundle
 
+required-brew:
+	brew update && brew upgrade && brew install fish nvim nodenv rbenv pyenv
+
 nodenv:
 	./scripts/nodenv.sh
 
