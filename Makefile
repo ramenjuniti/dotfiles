@@ -12,7 +12,7 @@ cp:
 	cp -rf ~/.config/karabiner                          ./.config
 	cp -rf ~/.gitconfig                                 ./.gitconfig
 
-all: link brew nodenv rbenv pyenv nvim fish chsh reload
+all: link all-brew nodenv rbenv pyenv nvim fish chsh reload
 
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config
@@ -21,7 +21,7 @@ link:
 	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
 
-brew:
+all-brew:
 	brew update && \
 	brew upgrade && \
 	brew bundle
@@ -30,7 +30,7 @@ required-brew:
 	brew update && \
 	brew upgrade && \
 	brew install fish nvim nodenv rbenv pyenv && \
-	brew cask install iterm2
+	brew cask install iterm2 karabiner
 
 nodenv:
 	./scripts/nodenv.sh
