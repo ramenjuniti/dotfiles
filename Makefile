@@ -15,10 +15,10 @@ cp:
 all: link brew nodenv rbenv pyenv nvim fish chsh reload
 
 link:
-	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config/fish
-	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config/nvim 
-	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config/karabiner
-	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config/iterm2
+	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config
+	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config
+	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config
+	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
 
 brew:
