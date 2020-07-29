@@ -48,6 +48,9 @@ jobs:
             - name: Check fish variable
               run: cat ./.config/fish/fish_variables
 
+            - name: Check login shell
+              run: cat /etc/shells
+
             - name: Check node
               run: fish -c "node -v"
 
@@ -58,7 +61,7 @@ jobs:
               run: fish -c "python --version"
 
             - name: Check nvim
-              run: nvim -c "checkhealth | q"
+              run: nvim -c q
 
     all:
         runs-on: macos-latest
@@ -78,6 +81,9 @@ jobs:
             - name: Check fish variable
               run: cat ./.config/fish/fish_variables
 
+            - name: Check login shell
+              run: cat /etc/shells
+
             - name: Check node
               run: fish -c "node -v"
 
@@ -86,4 +92,7 @@ jobs:
 
             - name: Check python
               run: fish -c "python --version"
+
+            - name: Check nvim
+              run: nvim -c q
 
