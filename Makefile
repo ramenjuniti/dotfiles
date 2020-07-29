@@ -16,7 +16,7 @@ cp:
 	cp -rf ~/.config/karabiner                          ./.config
 	cp -rf ~/.gitconfig                                 ./.gitconfig
 
-all: link all-brew nodenv rbenv pyenv nvim fish chsh reload
+all: brew link all-brew nodenv rbenv pyenv nvim fish chsh reload
 
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config
@@ -26,6 +26,9 @@ link:
 	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config
 	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
+
+brew:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 all-brew:
 	brew update && \
