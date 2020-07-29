@@ -12,4 +12,6 @@ if type nvim >/dev/null 2>&1; then
     rm ./installer.sh
 
     nvim -c "UpdateRemotePlugins | q" 
+    nvim -c "call dein#recache_runtimepath() | q"
+    nvim -c q
 fi
