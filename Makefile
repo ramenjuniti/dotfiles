@@ -16,7 +16,7 @@ cp:
 	cp -rf ~/.config/karabiner                          ./.config
 	cp -rf ~/.gitconfig                                 ./.gitconfig
 
-all: brew link all-brew nodenv rbenv pyenv nvim fish chsh reload
+all: brew link all-brew nodenv rbenv pyenv fish chsh nvim reload
 
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config
@@ -50,15 +50,18 @@ rbenv:
 pyenv:
 	./scripts/pyenv.sh
 
-nvim:
-	./scripts/nvim.sh
-
 fish:
 	./scripts/fish.sh
 
 chsh:
 	echo /usr/local/bin/fish | sudo tee -a /etc/shells && \
 	sudo chsh -s /usr/local/bin/fish
+
+yarn:
+	npm i -g yarn
+
+nvim:
+	./scripts/nvim.sh
 
 reload:
 	killall cfprefsd
