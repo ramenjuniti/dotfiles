@@ -30,11 +30,11 @@ jobs:
             - name: Run chsh
               run: make chsh
 
-            - name: Run nvim
-              run: source ~/.bashrc && source ~/.bash_profile && make nvim
-
             - name: Run yarn
               run: source ~/.bashrc && source ~/.bash_profile && make yarn
+
+            - name: Run nvim
+              run: source ~/.bashrc && source ~/.bash_profile && make nvim
 
             - name: Run reload
               run: make reload
