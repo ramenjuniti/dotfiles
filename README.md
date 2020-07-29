@@ -12,6 +12,11 @@
 	xcode-select --install
 	```
 
+1. git clone dotfiles
+	```sh
+	git clone https://github.com/ramenjuniti/dotfiles.git
+	```
+
 1. install all
 	```sh
 	make all
