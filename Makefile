@@ -1,8 +1,10 @@
 mkdir:
-	mkdir -p ./config/fish
-	mkdir -p ./config/nvim
-	mkdir -p ./config/karabiner
-	mkdir -p ./config/iterm2
+	mkdir -p ./.config/fish
+	mkdir -p ./.config/nvim
+	mkdir -p ./.config/coc
+	mkdir -p ./.local/share/nvim
+	mkdir -p ./.config/karabiner
+	mkdir -p ./.config/iterm2
 
 cp:
 	cp -rf ~/.config/fish/config.fish                   ./.config/fish/config.fish
@@ -10,6 +12,7 @@ cp:
 	cp -rf ~/.config/fish/fish_color                    ./.config/fish/fish_color
 	cp -rf ~/.config/iterm2/com.googlecode.iterm2.plist ./.config/iterm2/com.googlecode.iterm2.plist
 	cp -rf ~/.config/nvim                               ./.config
+	cp -rf ~/.local/share/nvim/rplugin.vim              ./.local/share/nvim/rplugin.vim
 	cp -rf ~/.config/karabiner                          ./.config
 	cp -rf ~/.gitconfig                                 ./.gitconfig
 
@@ -18,6 +21,8 @@ all: link all-brew nodenv rbenv pyenv nvim fish chsh reload
 link:
 	ln -sf ${CURDIR}/.config/fish      ${HOME}/.config
 	ln -sf ${CURDIR}/.config/nvim      ${HOME}/.config
+	ln -sf ${CURDIR}/.config/coc       ${HOME}/.config
+	ln -sf ${CURDIR}/.local/share/nvim ${HOME}/.local/share/nvim
 	ln -sf ${CURDIR}/.config/karabiner ${HOME}/.config
 	ln -sf ${CURDIR}/.config/iterm2    ${HOME}/.config
 	ln -sf ${CURDIR}/.gitconfig        ${HOME}/.gitconfig
@@ -54,4 +59,3 @@ chsh:
 
 reload:
 	killall cfprefsd
-

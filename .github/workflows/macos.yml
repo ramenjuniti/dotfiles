@@ -21,11 +21,11 @@ jobs:
             - name: Run pyenv
               run: make pyenv
 
-            - name: Run nvim
-              run: source ~/.bashrc && source ~/.bash_profile && make nvim
-
             - name: Run rbenv
               run: make rbenv
+
+            - name: Run nvim
+              run: source ~/.bashrc && source ~/.bash_profile && make nvim
 
             - name: Run fish
               run: make fish
@@ -53,6 +53,9 @@ jobs:
 
             - name: Check python
               run: fish -c "python --version"
+            
+            - name: Check nvim
+              run: nvim -c "checkhealth"
 
     all:
         runs-on: macos-latest
